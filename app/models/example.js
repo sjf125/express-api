@@ -7,6 +7,7 @@ const exampleSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  // underscore denotes that it will not be changed/set, not functionally different
   _owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
